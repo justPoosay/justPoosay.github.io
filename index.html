@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oscar — Developer</title>
+  <meta name="description" content="Oscar is a student developer building everything from real-time C++ audio and graphics tools to full-stack web apps.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Oscar — Developer">
+  <meta property="og:description" content="Student developer. C++, TypeScript, Python — and piano.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var t, d = document.documentElement;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      d.setAttribute("data-theme", t);
+      d.classList.add("js");
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html">Oscar<span class="brand-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="piano.html">Piano</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.8A5.8 5.8 0 0 1 6.2 2.5a5.8 5.8 0 1 0 7.3 7.3z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            <svg class="icon-sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3 3l1.1 1.1M11.9 11.9 13 13M3 13l1.1-1.1M11.9 4.1 13 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div data-stagger>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Student developer</p>
+        <h1>Hi, I'm Oscar. <em>I build things that make sound, move, and save time.</em></h1>
+        <p class="lead">
+          I write software across the stack — from real-time C++ audio and graphics
+          tools to full-stack web apps — and spend the rest of my time at the piano.
+        </p>
+        <div class="hero-links">
+          <a class="button button--solid" href="projects.html">See my work <span class="arrow arrow--right">→</span></a>
+          <a class="button" href="https://github.com/justPoosay">GitHub <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <canvas class="wave" aria-hidden="true" data-reveal></canvas>
+    </section>
+
+    <dl class="facts" data-stagger>
+      <div>
+        <dt>Public repositories</dt>
+        <dd data-count="17">17</dd>
+      </div>
+      <div>
+        <dt>Languages</dt>
+        <dd data-count="5">5</dd>
+      </div>
+      <div>
+        <dt>On GitHub since</dt>
+        <dd data-count="2023" data-count-from="2010">2023</dd>
+      </div>
+    </dl>
+
+    <section class="section" aria-labelledby="about-label" data-reveal>
+      <h2 class="section-label" id="about-label"><span class="num">01</span>About</h2>
+      <div class="section-body prose">
+        <p>
+          I like projects where code meets something tangible: sound you can hear,
+          data you can watch move, or a tool that saves someone an afternoon of
+          manual work. A lot of what I build starts as a school assignment or a
+          personal itch and grows from there.
+        </p>
+        <p>
+          Lately I've been working with TypeScript, React and Next.js on the web,
+          Python and Django on the backend, and C++ with Raylib whenever I want
+          something fast and visual. Away from the keyboard — well, a different
+          keyboard — I'm learning pieces on the piano. A few recordings live on the
+          <a href="piano.html">Piano</a> page.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="toolkit-label" data-reveal>
+      <h2 class="section-label" id="toolkit-label"><span class="num">02</span>Toolkit</h2>
+      <div class="section-body">
+        <dl class="toolkit">
+          <div>
+            <dt>Languages</dt>
+            <dd><ul class="chips"><li>C++</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>Kotlin</li></ul></dd>
+          </div>
+          <div>
+            <dt>Frontend</dt>
+            <dd><ul class="chips"><li>React</li><li>Next.js</li><li>Vue</li><li>Tailwind CSS</li></ul></dd>
+          </div>
+          <div>
+            <dt>Backend</dt>
+            <dd><ul class="chips"><li>Node.js</li><li>Django</li><li>FastAPI</li></ul></dd>
+          </div>
+          <div>
+            <dt>Data &amp; tools</dt>
+            <dd><ul class="chips"><li>PostgreSQL</li><li>Firebase</li><li>Docker</li><li>Git</li><li>GitHub Actions</li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="work-label" data-reveal>
+      <h2 class="section-label" id="work-label"><span class="num">03</span>Selected work</h2>
+      <div class="section-body">
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/justPoosay/Morpholex">
+              <span><span class="title">Morpholex</span> <span class="desc">— word-family search engine</span></span>
+              <span class="meta">TypeScript <span class="arrow">↗</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/justPoosay/bytebeat-player">
+              <span><span class="title">Bytebeat Composer</span> <span class="desc">— real-time algorithmic music</span></span>
+              <span class="meta">C++ <span class="arrow">↗</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/justPoosay/midieval">
+              <span><span class="title">MIDIeval</span> <span class="desc">— hummed melodies to MIDI</span></span>
+              <span class="meta">Flutter <span class="arrow">↗</span></span>
+            </a>
+          </li>
+        </ul>
+        <a class="more-link" href="projects.html">All projects <span class="arrow arrow--right">→</span></a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-label" data-reveal>
+      <h2 class="section-label" id="contact-label"><span class="num">04</span>Contact</h2>
+      <div class="section-body">
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/justPoosay">
+              <span class="title">GitHub</span>
+              <span class="meta">@justPoosay <span class="arrow">↗</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/oscarstaniszewski/">
+              <span class="title">LinkedIn</span>
+              <span class="meta">/in/oscarstaniszewski <span class="arrow">↗</span></span>
+            </a>
+          </li>
+          <!-- To add email, copy a block above and use href="mailto:you@example.com" -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Oscar</span>
+      <a href="https://github.com/justPoosay">github.com/justPoosay</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
