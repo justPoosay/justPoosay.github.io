@@ -19,6 +19,16 @@ window.PIECES = [
     file: "audio/minute-waltz.mp3",
   },
   {
+    title: "Nocturne in E-flat major, Op. 9 No. 2",
+    composer: "Frédéric Chopin",
+    file: "audio/nocturne-op-9-no-2.mp3",
+  },
+  {
+    title: "Nocturne No. 20 in C-sharp minor",
+    composer: "Frédéric Chopin · Op. posth.",
+    file: "audio/nocturne-no-20.mp3",
+  },
+  {
     title: "Shop",
     composer: "Toby Fox · Undertale",
     file: "audio/shop.mp3",
